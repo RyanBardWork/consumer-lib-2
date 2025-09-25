@@ -11,8 +11,8 @@ import (
 func DoStuff(ctx context.Context, e1, e2, e3 error) {
 	fmt.Println("consumer1:")
 
-	fmt.Printf("ctx one: %v\n", ctx.Value(common.GetContextOne(ctx)))
-	fmt.Printf("ctx two: %v\n", ctx.Value(common.GetContextTwo(ctx)))
+	fmt.Printf("ctx one: %v\n", common.GetContextOne(ctx))
+	fmt.Printf("ctx two: %v\n", common.GetContextTwo(ctx))
 
 	fmt.Printf("e1 is SentinelError: %v\n", errors.Is(e1, common.ExampleSentinelError))
 	structErr := &common.StructError{}
