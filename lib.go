@@ -10,7 +10,7 @@ import (
 
 // pointless comment to try to force a publish
 func DoStuff(ctx context.Context, e1, e2, e3 error) {
-	fmt.Println("consumer1:")
+	fmt.Println("consumer2:")
 
 	fmt.Printf("ctx one: %v\n", common.GetContextOne(ctx))
 	fmt.Printf("ctx two: %v\n", common.GetContextTwo(ctx))
