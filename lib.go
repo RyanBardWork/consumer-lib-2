@@ -8,6 +8,7 @@ import (
 	"github.com/RyanBardWork/common-lib"
 )
 
+// pointless comment to try to force a publish
 func DoStuff(ctx context.Context, e1, e2, e3 error) {
 	fmt.Println("consumer1:")
 
